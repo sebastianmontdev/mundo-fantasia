@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Requisito de Responsividad: viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aethelgard — Crisis en el Atlas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font: Inter (Se asume una fuente legible simple, pero se podría elegir una más rúnica) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+</head>
+<body>
+
+    <!-- 4.1 Encabezado del mundo (header) -->
+    <header class="main-header">
+        <div class="header-content">
+            <!-- Icono opcional con emoji para simplicidad -->
+            <span class="world-icon">⛏️</span>
+            <h1>Aethelgard: El Reino de la Roca Profunda</h1>
+            <h2>Donde la piedra canta y el oro se doblega</h2>
+        </div>
+    </header>
+
+    <!-- 4.2 Navegación interna (nav) -->
+    <nav class="main-nav">
+        <!-- 3 enlaces que apunten a secciones relevantes (anchors) -->
+        <a href="#introduccion" class="nav-link">Introducción</a>
+        <a href="#atlas" class="nav-link">Atlas del Fuego y el Acero</a>
+        <a href="#reglas" class="nav-link">Leyes de la Montaña</a>
+    </nav>
+
+    <!-- 4.3 Cuerpo principal (main) -->
+    <main>
+        
+        <!-- a) Introducción al mundo (section) -->
+        <section id="introduccion" class="intro-section">
+            <h2 class="section-title">El Corazón de Aethelgard</h2>
+            <!-- Semántica: Contenido principal narrativo en article -->
+            <article class="intro-article">
+                <p>Aethelgard no es solo un reino; es una promesa tallada en la roca. Fundado en la Segunda Edad por los clanes exiliados del Norte, se ha convertido en el bastión inexpugnable de los enanos, un lugar donde el arte de la forja no es solo un oficio, sino una devoción. La vida aquí se mide en milenios, y la riqueza no se cuenta en monedas, sino en la profundidad de las vetas que se excavan y la pureza de los metales que se purifican.</p>
+                <p>Lo que hace especial a Aethelgard es su filosofía de **Inmovilidad Laboriosa**: no buscan el cambio, sino la perfección infinita del proceso. Sus ciudades son laberintos subterráneos donde el sol nunca toca el oro, pero el brillo de los martillos nunca cesa. Somos el músculo del mundo, los guardianes de lo que permanece.</p>
+            </article>
+        </section>
+
+        <!-- b) Atlas / catálogo de elementos (section con artículos) -->
+        <section id="atlas" class="atlas-section">
+            <h2 class="section-title">Atlas del Fuego y el Acero</h2>
+            <p>Un catálogo de artefactos, lugares y tradiciones que definen la cultura enana.</p>
+            
+            <!-- Maquetación: mosaico/cuadrícula usando grid (se define en styles.css) -->
+            <div class="atlas-grid">
+                <!-- Mínimo 8 elementos representados como tarjetas (article) -->
+                
+                <article class="card">
+                    <h3>Clan Martillo de Bronce</h3>
+                    <div class="visual-detail border-bronze"></div>
+                    <p>El clan más antiguo, dedicado a la minería y el resguardo de la tradición. Sus barbas son legendarias y sus juramentos, irrompibles.</p>
+                    <span class="tag-bronze">Tradición</span>
+                </article>
+
+                <article class="card">
+                    <h3>El Horno Primordial</h3>
+                    <div class="visual-detail bg-fire"></div>
+                    <p>Una forja alimentada por la lava viva de la montaña. Solo los Maestros Forjadores pueden acercarse a su calor abrasador.</p>
+                    <span class="tag-bronze">Lugar Clave</span>
+                </article>
+
+                <article class="card">
+                    <h3>La Veta de Mithril</h3>
+                    <div class="visual-detail border-silver"></div>
+                    <p>El tesoro más custodiado. Un metal ligero como una pluma y fuerte como un dragón. Su ubicación es un secreto guardado por los Reyes.</p>
+                    <span class="tag-bronze">Recurso</span>
+                </article>
+
+                <article class="card">
+                    <h3>Gemas del Submundo</h3>
+                    <div class="visual-detail border-gem"></div>
+                    <p>Cristales que crecen en las cavernas más profundas. Tienen la propiedad de capturar la luz y devolverla con un brillo eterno.</p>
+                    <span class="tag-bronze">Artefacto</span>
+                </article>
+
+                <article class="card">
+                    <h3>El Guardián Rúnico</h3>
+                    <div class="visual-detail border-rune"></div>
+                    <p>Antiguo autómata de piedra y cobre animado por runas. Su deber es patrullar las minas y defender las fronteras inferiores.</p>
+                    <span class="tag-bronze">Defensa</span>
+                </article>
+
+                <article class="card">
+                    <h3>El Puente de Obsidiana</h3>
+                    <div class="visual-detail bg-obsidian"></div>
+                    <p>Una inmensa estructura que cruza un abismo volcánico. Es el único camino hacia los niveles inferiores de la ciudad.</p>
+                    <span class="tag-bronze">Lugar Clave</span>
+                </article>
+                
+                <article class="card">
+                    <h3>El Estandarte de los Reyes</h3>
+                    <div class="visual-detail border-gold"></div>
+                    <p>Tejido con hilo de oro y cabello de las enanas matriarcas. Representa la línea de sangre real y el poder de Aethelgard.</p>
+                    <span class="tag-bronze">Símbolo</span>
+                </article>
+                
+                <article class="card">
+                    <h3>La Cerveza de Raíz</h3>
+                    <div class="visual-detail bg-beer"></div>
+                    <p>La bebida ceremonial más fuerte del reino. Fermentada por cien años en barriles de roble, es sinónimo de celebración y acuerdo.</p>
+                    <span class="tag-bronze">Tradición</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- c) Sistema / reglas / lógica del mundo (section con lista) -->
+        <section id="reglas" class="rules-section">
+            <h2 class="section-title">Leyes y Principios de Aethelgard</h2>
+            <p>El código que rige el día a día y mantiene el orden en la Roca Profunda.</p>
+
+            <!-- Lista (ul o ol) con al menos 5 puntos -->
+            <ol class="rules-list">
+                <li>**La Ley del Talión de la Forja:** Una ofensa con acero se paga con la pérdida de un dedo; una ofensa con oro, con la vida.</li>
+                <li>**El Deber del Descubridor:** Toda veta mineral o caverna nueva pertenece por ley a la comunidad y no al individuo que la encuentra.</li>
+                <li>**El Respeto a los Ancianos:** La barba de un enano es su historia. No se le debe cortar ni tocar sin permiso bajo pena de exilio.</li>
+                <li>**El Juramento Silencioso:** La palabra enana vale más que cualquier pergamino. Los pactos más importantes se sellan sin hablar, solo con un golpe de martillo.</li>
+                <li>**La Inmortalidad del Trabajo:** Las obras maestras de la forja deben ser reparadas, nunca reemplazadas. El trabajo bien hecho vive para siempre.</li>
+            </ol>
+        </section>
+
+        <!-- d) Contenido complementario (aside) -->
+        <aside class="complementary-content">
+            <h3 class="section-title">Glosario Rúnico Básico</h3>
+            <!-- Semántica: Lista de definiciones -->
+            <dl>
+                <dt>Dvergar</dt>
+                <dd>Nombre antiguo para la raza enana, que significa "Gente de la Cima Nebulosa" (irónico para un pueblo subterráneo).</dd>
+                <dt>Khazad</dt>
+                <dd>La palabra enana para "Hogar" o "Fortaleza".</dd>
+                <dt>Nauglamir</dt>
+                <dd>Un artefacto legendario que causó la mayor disputa entre elfos y enanos en la historia.</dd>
+            </dl>
+        </aside>
+
+    </main>
+
+    <!-- 4.4 Pie de página (footer) -->
+    <footer class="main-footer">
+        <p class="team-name">WorldHub: Forja Estelar</p>
+        <p>Integrantes: [Nombre Completo 1], [Nombre Completo 2], [Nombre Completo 3], [Nombre Completo 4]</p>
+        <p>Año: 2024</p>
+        <!-- Enlaces Placeholder - Reemplazar con los reales -->
+        <p>
+            <a href="https://github.com/nombre-del-repo" target="_blank" class="footer-link">Repositorio de GitHub</a> |
+            <a href="https://usuario.github.io/nombre-del-repo" target="_blank" class="footer-link">Sitio Publicado (GitHub Pages)</a>
+        </p>
+    </footer>
+
+</body>
+</html>
